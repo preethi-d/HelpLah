@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -23,10 +23,10 @@
         android:onClick="onButtonClick"
         android:text="Log in"
         tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="210dp" />
-
+        tools:layout_editor_absoluteY="210dp"
+        android:layout_below="@id/username" />
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/signup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign up!"
@@ -41,6 +41,7 @@
         android:inputType="textPersonName"
         android:text="Password"
         tools:layout_editor_absoluteX="85dp"
-        tools:layout_editor_absoluteY="148dp" />
-    
+        tools:layout_editor_absoluteY="148dp"
+        android:layout_below="@id/signup" />
+
 </android.support.constraint.ConstraintLayout>
